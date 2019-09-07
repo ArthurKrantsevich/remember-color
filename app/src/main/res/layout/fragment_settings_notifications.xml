@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:text="Дни поминовения"
+                android:textColor="#b1a28c"
+                android:textColorHighlight="#b1a28c"
+                android:textColorLink="#b1a28c"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button"
+                    android:checked="true"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Общественные"
+                    android:textColor="#8a8a8a"
+                    android:textColorHighlight="#8a8a8a"
+                    android:textColorLink="#8a8a8a" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:button="@drawable/radio_button"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Личные"
+                    android:textColor="#8a8a8a"
+                    android:textColorHighlight="#8a8a8a"
+                    android:textColorLink="#8a8a8a" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:text="Уведомления"
+                android:textColor="#b1a28c"
+                android:textColorHighlight="#b1a28c"
+                android:textColorLink="#b1a28c"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button"
+                    android:checked="true"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="За неделю"
+                    android:textColor="#8a8a8a"
+                    android:textColorHighlight="#8a8a8a"
+                    android:textColorLink="#8a8a8a" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:button="@drawable/radio_button"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="За день"
+                    android:textColor="#8a8a8a"
+                    android:textColorHighlight="#8a8a8a"
+                    android:textColorLink="#8a8a8a" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:button="@drawable/radio_button"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Никогда"
+                    android:textColor="#8a8a8a"
+                    android:textColorHighlight="#8a8a8a"
+                    android:textColorLink="#8a8a8a" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:button="@drawable/radio_button"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="выбрать количество дней"
+                    android:textColor="#8a8a8a"
+                    android:textColorHighlight="#8a8a8a"
+                    android:textColorLink="#8a8a8a" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#b1a28c"
+        android:text="Сохранить"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+</LinearLayout>
